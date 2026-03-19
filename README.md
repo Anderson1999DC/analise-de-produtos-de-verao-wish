@@ -153,8 +153,11 @@ Produtos com boa reputação, percepção de valor e sinais de confiabilidade te
 ## Estrutura do Projeto
 
 ├── analise-de-vendas-wish.ipynb
+
 ├── README.md
+
 ├── requirements.txt
+
 ├── summer-products-with-rating-and-performance_2020-08
 
 ---
