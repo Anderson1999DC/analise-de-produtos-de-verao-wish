@@ -121,8 +121,6 @@ Esses fatores explicam diretamente as decisões do modelo.
 
 Os resultados indicam que o sucesso dos produtos é determinado pela combinação de múltiplos fatores, e não por uma variável isolada.
 
-## Principais achados:
-
 Prova social é decisiva: produtos com melhores avaliações e maior volume de reviews apresentam maior número de vendas
 
 Precificação influencia comportamento: descontos percebidos (diferença entre preço real e varejo) impactam diretamente a conversão
