@@ -164,8 +164,7 @@ Produtos com boa reputação, percepção de valor e sinais de confiabilidade te
 1. Clone o repositório
 
 2. Instale as dependências:
-```bash
-pip install -r requirements.txt
+requirements.txt
 
 ---
 
