@@ -43,7 +43,7 @@ Neste projeto, analisei um dataset real de produtos de verão da Wish para respo
 
 | Definição de Sucesso | Critério |
 |---|---|
-| **Produto bem-sucedido** (`success = 1`) | Receita estimada (`price × units_sold`) acima da mediana — **> US$ 7.000** |
+| **Produto bem sucedido** (`success = 1`) | Receita estimada (`price × units_sold`) acima da mediana — **> US$ 7.000** |
 | **Produto sem sucesso** (`success = 0`) | Receita estimada abaixo da mediana |
 
 ---
@@ -183,7 +183,7 @@ Cada pergunta foi investigada comparando a distribuição de produtos `success=1
 
 ![WordCloud Tags Sucesso](assets/wordcloud_tags_sucesso.png)
 
-> As tags mais frequentes em produtos bem-sucedidos são: **Women's Fashion, Summer, Fashion, Women, Casual**. Produtos que combinam apelo de moda feminina com sazonalidade de verão dominam o top de vendas.
+> As tags mais frequentes em produtos bem sucedidos são: **Women's Fashion, Summer, Fashion, Women, Casual**. Produtos que combinam apelo de moda feminina com sazonalidade de verão dominam o top de vendas.
 
 **Top 5 tags — produtos de sucesso vs. sem sucesso:**
 
