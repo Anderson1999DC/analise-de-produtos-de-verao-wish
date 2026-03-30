@@ -43,7 +43,7 @@ Neste projeto, analisei um dataset real de produtos de verão da Wish para respo
 
 | Definição de Sucesso | Critério |
 |---|---|
-| **Produto bem sucedido** (`success = 1`) | Receita estimada (`price × units_sold`) acima da mediana — **> US$ 7.000** |
+| **Produto bem sucedido** (`success = 1`) | Receita estimada (`price × units_sold`) acima da mediana  **> US$ 7.000** |
 | **Produto sem sucesso** (`success = 0`) | Receita estimada abaixo da mediana |
 
 ---
@@ -113,7 +113,7 @@ flowchart TD
 | Colunas originais | 43 |
 | Colunas selecionadas para análise | 22 |
 | Nulos tratados | 55 registros (product_color, size, urgency_banner, origin_country) |
-| Variável alvo | `success` (0 ou 1) — definida pela mediana de receita |
+| Variável alvo | `success` (0 ou 1)  definida pela mediana de receita |
 
 **Estatísticas do dataset:**
 
@@ -159,7 +159,7 @@ Cada pergunta foi investigada comparando a distribuição de produtos `success=1
 
 ![Avaliação Sucesso vs Falha](assets/avaliacao_sucesso_vs_falha.png)
 
-> Sim — produtos bem-sucedidos concentram avaliações acima de **3,5 estrelas**, enquanto produtos com menos vendas apresentam distribuição mais dispersa e pior. Avaliação é um fator relevante para o sucesso.
+> Sim produtos bem-sucedidos concentram avaliações acima de **3,5 estrelas**, enquanto produtos com menos vendas apresentam distribuição mais dispersa e pior. Avaliação é um fator relevante para o sucesso.
 
 ---
 
@@ -167,7 +167,7 @@ Cada pergunta foi investigada comparando a distribuição de produtos `success=1
 
 ![Contagem de Tags Sucesso vs Falha](assets/contagem_de_tags_sucesso_vs_falha.png)
 
-> Produtos com **mais tags tendem a vender mais**. A maior densidade de tags aumenta a descoberta orgânica do produto na plataforma — uma estratégia simples com impacto real nas vendas.
+> Produtos com **mais tags tendem a vender mais**. A maior densidade de tags aumenta a descoberta orgânica do produto na plataforma uma estratégia simples com impacto real nas vendas.
 
 ---
 
@@ -175,7 +175,7 @@ Cada pergunta foi investigada comparando a distribuição de produtos `success=1
 
 ![Desconto Sucesso vs Falha](assets/desconto_sucesso_vs_falha.png)
 
-> A distribuição de descontos é similar entre os dois grupos — o desconto **isoladamente não é um diferencial determinante** para o sucesso. O preço absoluto (já baixo na Wish) parece ser mais relevante que a diferença em relação ao varejo.
+> A distribuição de descontos é similar entre os dois grupos o desconto **isoladamente não é um diferencial determinante** para o sucesso. O preço absoluto (já baixo na Wish) parece ser mais relevante que a diferença em relação ao varejo.
 
 ---
 
@@ -185,7 +185,7 @@ Cada pergunta foi investigada comparando a distribuição de produtos `success=1
 
 > As tags mais frequentes em produtos bem sucedidos são: **Women's Fashion, Summer, Fashion, Women, Casual**. Produtos que combinam apelo de moda feminina com sazonalidade de verão dominam o top de vendas.
 
-**Top 5 tags — produtos de sucesso vs. sem sucesso:**
+**Top 5 tags produtos de sucesso vs. sem sucesso:**
 
 | Ranking | Tags — Sucesso | Tags — Sem Sucesso |
 |---|---|---|
@@ -195,11 +195,11 @@ Cada pergunta foi investigada comparando a distribuição de produtos `success=1
 | 4º | Women (504) | Casual (476) |
 | 5º | Casual (429) | Women (457) |
 
-> A tag **"Women's Fashion"** aparece mais nos produtos de sucesso do que nos sem sucesso — sinal de que o posicionamento voltado para moda feminina é mais eficiente.
+> A tag **"Women's Fashion"** aparece mais nos produtos de sucesso do que nos sem sucesso sinal de que o posicionamento voltado para moda feminina é mais eficiente.
 
 ---
 
-### Ad Boosts e Badges — surpreendem!
+### Ad Boosts e Badges surpreendem!
 
 | Fator | Produtos Sem Sucesso | Produtos Com Sucesso | Conclusão |
 |---|---|---|---|
@@ -217,7 +217,7 @@ Cada pergunta foi investigada comparando a distribuição de produtos `success=1
 
 ![Feature Importances](assets/feature_importances.png)
 
-> As variáveis numéricas contínuas — como `rating_count`, `merchant_rating_count`, `price` e `units_sold` — dominam as importâncias do modelo, confirmando que volume e reputação são os principais sinais preditivos.
+> As variáveis numéricas contínuas — como `rating_count`, `merchant_rating_count`, `price` e `units_sold` dominam as importâncias do modelo, confirmando que volume e reputação são os principais sinais preditivos.
 
 ---
 
@@ -225,7 +225,7 @@ Cada pergunta foi investigada comparando a distribuição de produtos `success=1
 
 ![Gráfico Resumo SHAP](assets/grafico_resumo_shap.png)
 
-> O SHAP summary plot mostra o impacto individual de cada feature nas predições. Valores altos de `rating_count` e `merchant_rating_count` **empurram fortemente o modelo para prever sucesso** — confirmando que reputação acumulada é o fator mais decisivo, acima do preço.
+> O SHAP summary plot mostra o impacto individual de cada feature nas predições. Valores altos de `rating_count` e `merchant_rating_count` **empurram fortemente o modelo para prever sucesso** confirmando que reputação acumulada é o fator mais decisivo, acima do preço.
 
 ---
 
