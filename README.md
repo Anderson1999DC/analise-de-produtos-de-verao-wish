@@ -208,7 +208,7 @@ analise-de-produtos-de-verao-wish/
 │   ├── shipping_analysis.png
 │   └── tags_sucesso.png
 │
-├──  analise_de_vendas_wish_restrutured.ipynb # Notebook completo
+├──  analise_de_vendas_wish.ipynb # Notebook completo
 ├──  summer-products-with-rating-and-performance_2020-08.csv
 ├──  modelo_wish_success.pkl                  # Modelo Random Forest treinado
 ├──  colunas_wish.pkl                         # Features esperadas pela API
