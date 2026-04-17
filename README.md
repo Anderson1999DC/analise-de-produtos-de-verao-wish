@@ -131,7 +131,7 @@ flowchart TD
 |---|---|
 | Volume | ~1.573 produtos |
 | Período | Agosto de 2020 |
-| Variável target | `success` — faturamento > $7.000 |
+| Variável target | `success` faturamento > $7.000 |
 | Features selecionadas | 22 colunas originais |
 | Features criadas | `discount`, `tags_count`, `income` |
 
@@ -199,7 +199,7 @@ flowchart TD
 | 2 | **Desconto percebido** | Diferença entre retail_price e price influencia a conversão |
 | 3 | **Quantidade de tags** | Mais tags = maior discoverabilidade orgânica |
 | 4 | **Cobertura geográfica** | Mais países atendidos = maior mercado potencial |
-| 5 | **Ad boosts** | Efeito positivo mas não determinante — qualidade supera publicidade |
+| 5 | **Ad boosts** | Efeito positivo mas não determinante qualidade supera publicidade |
 | 6 | **Badges** | Contribuem para confiança mas não garantem vendas isoladamente |
 
 **Aplicações do modelo:**
